@@ -73,6 +73,7 @@ class _ProductPageState extends State<ProductPage> {
                               color: Colors.white,
                               elevation: 1,
                               child: ListTile(
+                                contentPadding: const EdgeInsets.all(8),
                                 onTap: () {
                                   Navigator.push(
                                     context,
