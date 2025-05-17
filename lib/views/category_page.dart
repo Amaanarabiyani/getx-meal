@@ -38,7 +38,8 @@ class _CategoryPageState extends State<CategoryPage> {
               : Controller.error.isNotEmpty
                   ? Center(child: Text(Controller.error))
                   : GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2),
                       itemCount: Controller.categoryList.length,
                       itemBuilder: (context, index) {
                         final category = Controller.categoryList[index];
@@ -60,6 +61,7 @@ class _CategoryPageState extends State<CategoryPage> {
                                 BoxShadow(
                                   offset: Offset(4, 4),
                                   blurRadius: 8,
+                                  // ignore: deprecated_member_use
                                   color: Colors.black.withOpacity(0.12),
                                 ),
                               ],

@@ -64,6 +64,7 @@ class _ProductPageState extends State<ProductPage> {
                                 BoxShadow(
                                   offset: Offset(4, 4),
                                   blurRadius: 2,
+                                  // ignore: deprecated_member_use
                                   color: Colors.black.withOpacity(0.12),
                                 )
                               ],
@@ -83,12 +84,12 @@ class _ProductPageState extends State<ProductPage> {
                                     ),
                                   );
                                 },
-                                title: Text(product.strMeal),
-                                leading: CircleAvatar(
-                                  backgroundImage: NetworkImage(
-                                    product.strMealThumb,
-                                  ),
-                                ),
+                                // title: Text(product.strMeal),
+                                // leading: CircleAvatar(
+                                //   backgroundImage: NetworkImage(
+                                //     product.strMealThumb,
+                                //   ),
+                                // ),
                               ),
                             ),
                           ),
